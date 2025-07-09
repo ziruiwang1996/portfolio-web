@@ -65,7 +65,7 @@ export default function TextbookExchangePlaceholderPage() {
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
-                <p className="text-sm text-neutral-600 dark:text-neutral-400">Frontend Development: 60% Complete</p>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">Frontend Development: 40% Complete</p>
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-4 bg-neutral-300 dark:bg-neutral-600 rounded-full mr-3"></div>

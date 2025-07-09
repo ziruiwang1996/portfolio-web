@@ -16,7 +16,7 @@ export default function ResumeContent() {
 
   const technicalSkills = {
     "Programming Languages": "Bash/Shell, Python, C++, C, Java, JavaScript, HTML, CSS, SQL, NoSQL, R, Haskell, Swift, Dart, MATLAB",
-    "Technologies": "Git, Docker, Kubernetes, Jenkins, AWS, BigQuery, Snowflake, Firebase, Airflow, Spark, Kafka, Vertex AI, SageMaker",
+    "Technologies": "Git, Docker, Kubernetes, Jenkins, AWS, BigQuery, Snowflake, Firebase, Redis, Airflow, Spark, Kafka, Vertex AI, SageMaker, Flutter, Tableau",
     "Frameworks": "Flask, Django, FastAPI, Streamlit, Spring Boot, React.js, Vue.js, Next.js, Node.js, Tailwind CSS, LangChain, LlamaIndex"
   }
 
