@@ -114,7 +114,7 @@ export default function Home() {
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Extract Transform Load (ETL) data pipeline automation with Airflow, PySpark, SQL data warehouse, and AWS to ensure scalability and reproducibility
+                Extract Transform Load (ETL) data pipeline automation with Airflow, PySpark, data warehouse, and AWS to ensure scalability and reproducibility
               </li>
             </ul>
           </div>
@@ -167,7 +167,7 @@ export default function Home() {
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                React/Next.js/Flask/Django/Spring Boot applications
+                React.js/Next.js/Node.js/Flask/Django/Spring Boot applications
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>

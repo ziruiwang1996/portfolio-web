@@ -15,8 +15,8 @@ export default function ProjectList() {
       id: 2,
       title: "Life Science Research Agent",
       description: "An AI-powered chatbot using the Model Context Protocol and Google Gemini LLM, with the server deployed on Render and the UI hosted on Streamlit Community Cloud.",
-      tech: ["Python", "FastAPI", "Streamlit", "Google Gemini"],
-      domains: ["AI Engineer", "Machine Learning"],
+      tech: ["Python", "FastAPI", "Streamlit", "Google Gemini", "LangChain"],
+      domains: ["AI Engineer", "Software Engineer"],
       github: "https://github.com/ziruiwang1996/ai-agent-mcp",
       demo: "https://life-science-chatbot.streamlit.app"
     },
@@ -25,7 +25,7 @@ export default function ProjectList() {
       title: "AI Game Center: FastAPI-Driven Backend, React.js Experience",
       description: "An interactive platform featuring a suite of AI-powered games, built with a Python backend and React front-end for seamless, engaging gameplay. Deployed on AWS EC2 and Netlify for robust, scalable performance.",
       tech: ["Python", "FastAPI", "React.js", "Nginx", "Docker", "AWS EC2"],
-      domains: ["Software Engineer", "AI Engineer"],
+      domains: ["Software Engineer", "Artificial Intelligence"],
       github: "https://github.com/ziruiwang1996/ai_game_fastapi",
       demo: "https://ai-game-center.netlify.app"
     },
@@ -45,7 +45,7 @@ export default function ProjectList() {
   const getDomainStyle = (domain) => {
     const styles = {
       "Data Science": "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
-      "Machine Learning": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200", 
+      "Artificial Intelligence": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200", 
       "AI Engineer": "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
       "Software Engineer": "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
       "Data Engineering": "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200"
