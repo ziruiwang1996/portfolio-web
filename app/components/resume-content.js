@@ -51,10 +51,10 @@ export default function ResumeContent() {
       location: "East Lansing, MI", 
       period: "Mar 2020 – Jul 2022",
       achievements: [
-        "Developed a BART transformer model and a Variational Autoencoder in PyTorch to generate novel protein sequences, achieving a 24% improvement in stability (evaluated by FoldX) and a 300% increase in sequence library size.",
+        "Developed a BART transformer model and a Variational Autoencoder in PyTorch to generate novel protein sequences, achieving a 24% improvement in stability and a 300% increase in sequence library size.",
         "Built a predictive model in Scikit-learn by integrating Hierarchical Clustering with a Random Forest classifier to streamline molecule screening, increasing lead yield 4-fold.",
         "Led the development of data pipelines using PySpark, NumPy, and Pandas to collect, clean, normalize, and encode biological data, reducing preprocessing time by 40% and improving data accuracy.",
-        "Communicated results to stakeholders through visualizations and reports, applying PCA and statistical tests to highlight key findings."
+        "Communicated results to stakeholders through visualizations and reports, applying PCA and statistical tests to highlight findings."
       ]
     }
   ]
