@@ -22,6 +22,15 @@ export const metadata = {
   title: "Zirui Wang - Portfolio",
   description: "Professional portfolio of Zirui Wang, showcasing projects, skills, and resume",
   keywords: ["portfolio", "web developer", "software engineer", "Zirui Wang"],
+  metadataBase: new URL('https://your-production-domain.com'), // TODO: replace with real domain
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.svg', type: 'image/svg+xml', sizes: '32x32' }
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/icon.svg'
+  },
   openGraph: {
     title: "Zirui Wang - Portfolio",
     description: "Professional portfolio of Zirui Wang, showcasing projects, skills, and resume",
@@ -42,7 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html 
+    <html
       lang="en"
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
@@ -50,14 +59,22 @@ export default function RootLayout({ children }) {
         geistMono.variable
       )}
     >
-      <body className="antialiased max-w-4xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
+      <body className="antialiased max-w-4xl mx-4 lg:mx-auto">
+        <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
-          <div className="min-h-screen">
+          <div id="main-content" className="min-h-screen focus:outline-none">
             {children}
           </div>
           <Footer />
         </main>
+        {/* Floating Contact Button */}
+        <a
+          href="mailto:wangzr926@gmail.com"
+          className="fixed bottom-6 right-6 z-40 bg-gradient-to-br from-blue-500 to-purple-500 text-white px-5 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-200 focus-visible:ring-2 focus-visible:ring-blue-500 outline-none"
+          aria-label="Contact Zirui Wang"
+        >
+          Contact
+        </a>
       </body>
     </html>
   );

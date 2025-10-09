@@ -17,11 +17,11 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+    <footer className="mt-24 mb-8 px-2 md:px-0">
+      <ul className="font-sm flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300 justify-center">
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/zirui-ray-wang-331b43128"
@@ -32,7 +32,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/ziruiwang1996"
@@ -43,7 +43,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
             rel="noopener noreferrer"
             target="_blank"
             href="mailto:wangzr926@gmail.com"
@@ -53,9 +53,9 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
+      <p className="mt-8 text-center text-neutral-500 dark:text-neutral-400 text-xs">
+        &copy; {new Date().getFullYear()} Zirui Wang. MIT Licensed.
       </p>
     </footer>
-  )
+  );
 }

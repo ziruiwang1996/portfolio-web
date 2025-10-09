@@ -6,13 +6,24 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center lg:text-left">
         <div className="space-y-6">
-          <div className="space-y-4">
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-600 dark:from-neutral-100 dark:via-neutral-300 dark:to-neutral-400 bg-clip-text text-transparent">
-              Hi, I&apos;m Zirui Wang
-            </h1>
-            <p className="text-xl lg:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto lg:mx-0">
-              Engineer blending AI, software, and data science to build next-gen intelligent applications
-            </p>
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 space-y-4 lg:space-y-0">
+            <div className="mx-auto lg:mx-0 flex-shrink-0">
+              <Image
+                src="/images/profile.jpeg"
+                alt="Zirui Wang"
+                width={180}
+                height={180}
+                className="rounded-full ring-2 ring-neutral-200 dark:ring-neutral-800"
+              />
+            </div>
+            <div className="space-y-4">
+              <h1 className="text-4xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-600 dark:from-neutral-100 dark:via-neutral-300 dark:to-neutral-400 bg-clip-text text-transparent">
+                Hi, I&apos;m Zirui Wang
+              </h1>
+              <p className="text-xl lg:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto lg:mx-0">
+                Engineer blending AI, data science, and software to build intelligent, sacalable systems
+              </p>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a 
@@ -40,80 +51,118 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-6">
             <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              I&apos;m a Master&apos;s graduate in Computer Science at Syracuse University with a strong background in 
-              software engineering and data science. My expertise spans across machine learning, full-stack 
-              development, and cloud technologies.
-            </p>
-            <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              With hands-on experience at Regeneron Pharmaceuticals, I&apos;ve worked on large-scale data processing 
-              pipelines, LLM fine-tuning, and building scalable web applications.
+              I&apos;m a data scientist and AI engineer passionate about building intelligent systems that transform complex data into meaningful, 
+              real-world impact. My journey started in chemical and biomedical research, where I saw firsthand how data and computation drives 
+              healthcare innovation. Since then, I&apos;ve focused on combining AI, software engineering, and scalable data systems 
+              to turn complex datasets into actionable solutions, whether it&apos;s fine-tuning large language models, developing 
+              data pipelines, or designing intelligent applications that make knowledge more accessible.
             </p>
           </div>
+
+
           <div className="space-y-4">
-            <h3 className="font-semibold text-neutral-800 dark:text-neutral-200">Quick Facts</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-center text-neutral-600 dark:text-neutral-400">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                MS Computer Science @ Syracuse
-              </li>
-              <li className="flex items-center text-neutral-600 dark:text-neutral-400">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                Ex-Regeneron Pharmaceuticals
-              </li>
-              <li className="flex items-center text-neutral-600 dark:text-neutral-400">
-                <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                AI/ML & Full-Stack Developer
-              </li>
-            </ul>
-          </div>
+            <h3 className="font-semibold text-neutral-800 dark:text-neutral-200">At a Glance</h3>
+              <div className="space-y-3 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-neutral-500 dark:text-neutral-400">Location</span>
+                  <span className="text-neutral-800 dark:text-neutral-200">Syracuse, NY</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-neutral-500 dark:text-neutral-400">Education</span>
+                  <span className="text-neutral-800 dark:text-neutral-200">MS Computer Science</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-neutral-500 dark:text-neutral-400">Focus</span>
+                  <span className="text-neutral-800 dark:text-neutral-200">Data Science, ML/AI Engineer</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-neutral-500 dark:text-neutral-400">Status</span>
+                  <span className="text-green-600 dark:text-green-400">Open to opportunities</span>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
 
       {/* My Work Section */}
       <section>
-        <h2 className="text-3xl font-bold mb-12 text-neutral-800 dark:text-neutral-200 text-center">My Work</h2>
+        <h2 className="text-3xl font-bold mb-12 text-neutral-800 dark:text-neutral-200 text-center">Technical Capabilities</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Work Category 1 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
-            <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 hover:-translate-y-1">
+            <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-purple-500 via-violet-600 to-purple-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+              <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 12c0 2.21 3.582 4 8 4s8-1.79 8-4"/>
               </svg>
+              <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <h3 className="text-xl font-bold mb-4 text-neutral-800 dark:text-neutral-200">
-              Machine Learning & AI
+              Data Science & Engineering
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Developing intelligent systems using predictive models, deep learning, and NLP
+              Turning complex data into meaningful insights and predictive models that drive decision-making
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
-                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                LLM fine-tuning for clinical research
+                <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Perform exploratory data analysis, statistical modeling, and feature engineering to uncover trends and improve model performance
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
-                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Protein sequence modeling
+                <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Develop and evaluate predictive models using Scikit-learn, XGBoost, and TensorFlow
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
-                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                AI-powered agent
+                <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Extract Transform Load (ETL) data pipeline automation with Airflow, PySpark, SQL data warehouse, and AWS to ensure scalability and reproducibility
               </li>
             </ul>
           </div>
 
           {/* Work Category 2 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-300 hover:-translate-y-1">
-            <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clipRule="evenodd"/>
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
+            <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+              <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                <circle cx="12" cy="9" r="2" fill="currentColor"/>
               </svg>
+              <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <h3 className="text-xl font-bold mb-4 text-neutral-800 dark:text-neutral-200">
-              Full-Stack Development
+              Machine Learning & AI
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Building scalable web applications and microservices
+              Developing and deploying intelligent systems across NLP, predictive modeling, and generative AI
+            </p>
+            <ul className="space-y-3">
+              <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
+                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Fine-tune and evaluate large language models for biomedical, scientific, and domain-specific research
+              </li>
+              <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
+                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Develop and optimize deep neural networks with PyTorch and TensorFlow
+              </li>
+              <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
+                <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Create AI agents that reason, retrieve, and interact with external data sources
+              </li>
+            </ul>
+          </div>
+
+          {/* Work Category 3 */}
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-300 hover:-translate-y-1">
+            <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-green-500 via-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+              <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg>
+              <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-neutral-800 dark:text-neutral-200">
+              Software Development
+            </h3>
+            <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
+              Building scalable web applications and microservices with modern frameworks
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
@@ -122,65 +171,40 @@ export default function Home() {
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                RESTful API development
+                RESTful API design and backend integration
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Database design & optimization
+                Database architecture, optimization, and persistence management with SQL and NoSQL databases
               </li>
             </ul>
           </div>
 
-          {/* Work Category 3 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 hover:-translate-y-1">
-            <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold mb-4 text-neutral-800 dark:text-neutral-200">
-              Data Engineering
-            </h3>
-            <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Building robust data pipelines and infrastructure
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
-                <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                ETL pipeline automation
-              </li>
-              <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
-                <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Cloud infrastructure
-              </li>
-              <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
-                <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Data processing at scale
-              </li>
-            </ul>
-          </div>
 
           {/* Work Category 4 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 hover:-translate-y-1">
-            <div className="absolute top-6 right-6 w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 hover:-translate-y-1">
+            <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+              <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                <circle cx="7.5" cy="10" r="1" fill="currentColor"/>
+                <circle cx="16.5" cy="10" r="1" fill="currentColor"/>
               </svg>
+              <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <h3 className="text-xl font-bold mb-4 text-neutral-800 dark:text-neutral-200">
               Research & Publications
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Contributing to scientific research and open-source community
+              Advancing scientific discovery through computational research and open collaboration
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Bioinformatics research
+                Bioinformatics, computational biology, medical informatics research
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Published papers in journals
+                Paper publication
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>

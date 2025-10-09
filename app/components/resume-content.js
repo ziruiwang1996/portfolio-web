@@ -28,8 +28,8 @@ export default function ResumeContent() {
       period: "May – Aug 2024",
       achievements: [
         "Collaborated with data engineering teams to automate the retrieval and processing of 40k+ publications from arXiv and PubMed using Airflow and Docker, resulting in a scalable ETL pipeline that stores model-ready data in AWS S3.",
-        "Fine-tuned a Hugging Face LLM using Low-Rank Adaptation technique in TensorFlow and Keras to summarize clinical studies, enhancing real-world patient outcome extraction and reducing manual review time by 25%.",
-        "Conducted document- and entity-level sentiment analysis on 100+ studies using Part-Of-Speech tagging, Named Entity Recognition in NLTK, and a RoBERTa-based model, generating actionable insights on patient experiences and treatment efficacy."
+        "Fine-tuned a Hugging Face LLM with Low-Rank Adaptation in TensorFlow to summarize clinical studies, enhancing patient outcome extraction and reducing manual review time by 25%.",
+        "Conducted document- and entity-level sentiment analysis on 100+ studies using NLTK Named Entity Recognition and a RoBERTa model, generating actionable insights on patient experiences and treatment efficacy."
       ]
     },
     {
@@ -38,23 +38,23 @@ export default function ResumeContent() {
       location: "Tarrytown, NY",
       period: "May – Dec 2023",
       achievements: [
-        "Built a Flask-based application with a RESTful API and a Bootstrap front-end UI to support parsing, conforming, and querying of lab data in MongoDB and PostgreSQL databases, improving research data accessibility and usability by over 80%.",
-        "Enhanced software scalability and resilience by applying domain-driven design and implementing an event-driven architecture using RabbitMQ message broker, reducing technical debt by 30% and increasing system flexibility.",
+        "Developed a Flask application with a RESTful API, Bootstrap UI, and MongoDB/PostgreSQL persistence to parse, conform, monitor, and query legacy data, improving data usability and accessibility by over 80%.",
+        "Applied domain-driven design and implemented an event-driven architecture using RabbitMQ message broker, reducing technical debt by 30% and enhancing system scalability and resilience.",
         "Implemented unit and integration tests using pytest, increasing test coverage by 50% and reducing pre-release defects by 30%.",
-        "Collaborated with cross-functional teams using Bitbucket for version control, and Docker, Kubernetes, and Jenkins for CI/CD processes, decreasing deployment time by 40% and improving delivery speed by 30%.",
+        "Collaborated with cross-functional teams using Bitbucket for version control alongside Docker, Kubernetes, and Jenkins for CI/CD processes, decreasing deployment time by 40% and improving delivery speed by 30%.",
         "Leveraged Jira and Confluence to facilitate Agile Scrum ceremonies, driving continuous improvement through backlog refinement, sprint planning, and reviews, resulting in a 30% reduction in blockers and faster delivery cycles."
       ]
     },
     {
-      title: "Associate ML Engineer",
+      title: "Machine Learning Engineer",
       company: "Institute for Quantitative Health Science and Engineering",
       location: "East Lansing, MI", 
       period: "Mar 2020 – Jul 2022",
       achievements: [
-        "Developed a BART-based transformer NLP model and a generative VAE in PyTorch, achieving a 24% improvement in protein stability (evaluated by FoldX) and expanding sequence library size by 300% while maintaining statistical consistency.",
-        "Engineered a recommendation system in Scikit-learn, integrating unsupervised clustering with supervised classification models to streamline molecule screening, resulting in a 4-fold increase in lead yield.",
-        "Led the development of data pipelines using RDKit, PySpark, NumPy, and Pandas to process and encode molecular and protein data, reducing preprocessing time by 40% and improving data accuracy.",
-        "Managed file preparation, batch script generation, and data storage in Python, expediting 8k+ simulation runs on HPC clusters."
+        "Developed a BART transformer model and a Variational Autoencoder in PyTorch to generate novel protein sequences, achieving a 24% improvement in stability and a 300% increase in sequence library size.",
+        "Built a predictive model in Scikit-learn by integrating Hierarchical Clustering with a Random Forest classifier to streamline molecule screening, increasing lead yield 4-fold.",
+        "Led the development of data pipelines using PySpark, NumPy, and Pandas to collect, clean, normalize, and encode biological data, reducing preprocessing time by 40% and improving data accuracy.",
+        "Communicated results to stakeholders through visualizations and reports, applying PCA and statistical tests to highlight findings."
       ]
     }
   ]
