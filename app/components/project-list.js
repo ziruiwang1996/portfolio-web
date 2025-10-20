@@ -4,24 +4,15 @@ export default function ProjectList() {
   const projects = [
     {
       id: 1,
-      title: "Stack Overflow 2024 Survey Analysis",
-      description: "Built a scalable ETL pipeline (Airflow, PySpark, MinIO, Docker) to analyze Stack Overflow data; stored results in a Neno-hosted data warehouse and visualized insights via a Streamlit dashboard.",
-      tech: ["Python", "Pandas", "PySpark", "Plotly", "Streamlit", "PostgreSQL", "Airflow"],
-      domains: ["Data Science", "Data Engineering"],
-      github: "https://github.com/ziruiwang1996/stackoverflow-survey-dashboard",
-      demo: "https://stackoverflow-2024-survey-dashboard.streamlit.app"
-    },
-    {
-      id: 2,
       title: "Life Science Research Agent",
-      description: "An AI-powered chatbot using the Model Context Protocol and Google Gemini LLM, with the server deployed on Render and the UI hosted on Streamlit Community Cloud.",
+      description: "An AI agent powered by a LangChain-wrapped Google Gemini LLM with Model Context Protocol servers, Retrieval-Augmented Generation, and a Streamlit interface to assist researchers.",
       tech: ["Python", "FastAPI", "Streamlit", "Google Gemini", "LangChain"],
       domains: ["AI Engineer", "Software Engineer"],
       github: "https://github.com/ziruiwang1996/ai-agent-mcp",
       demo: "https://life-science-chatbot.streamlit.app"
     },
     { 
-      id: 3,
+      id: 2,
       title: "AI Game Center: FastAPI-Driven Backend, React.js Experience",
       description: "An interactive platform featuring a suite of AI-powered games, built with a Python backend and React front-end for seamless, engaging gameplay. Deployed on AWS EC2 and Netlify for robust, scalable performance.",
       tech: ["Python", "FastAPI", "React.js", "Nginx", "Docker", "AWS EC2"],
@@ -29,8 +20,26 @@ export default function ProjectList() {
       github: "https://github.com/ziruiwang1996/ai_game_fastapi",
       demo: "https://ai-game-center.netlify.app"
     },
+    {
+      id: 3,
+      title: "Stack Overflow 2024 Survey Analysis",
+      description: "Built a scalable ETL pipeline (Airflow, PySpark, MinIO, Docker) to analyze Stack Overflow data; stored results in a Neno-hosted data warehouse and visualized insights via a Streamlit dashboard.",
+      tech: ["Python", "Pandas", "PySpark", "Plotly", "Streamlit", "PostgreSQL", "Airflow"],
+      domains: ["Data Science", "Data Engineering"],
+      github: "https://github.com/ziruiwang1996/stackoverflow-survey-dashboard",
+      demo: "https://stackoverflow-2024-survey-dashboard.streamlit.app"
+    },
+    // {
+    //   id: 4,
+    //   title: "MIMIC healthcare data analysis",
+    //   description: "Project incoming",
+    //   tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "SQL"],
+    //   domains: ["Data Science"],
+    //   github: "",
+    //   demo: ""
+    // },
     {      
-      id: 4,
+      id: 5,
       title: "Textbook Exchange Platform",
       description: "Java-based web app for textbook exchange, built with microservices architecture and separate domains for modular communication.",
       tech: ["Java", "Spring Boot", "MySQL", "Vue.js", "RabbitMQ"],
