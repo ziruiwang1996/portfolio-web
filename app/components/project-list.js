@@ -22,6 +22,15 @@ export default function ProjectList() {
     },
     {
       id: 3,
+      title: "Pneumonia Diagnostic Classifier",
+      description: "A ResNet-18–based classifier that categorizes chest X-rays as bacterial, viral, or normal, and visualizes model predictions using saliency maps and class activation maps (CAMs).",
+      tech: ["Python", "PyTorch", "Lightning", "Matplotlib", "Numpy"],
+      domains: ["Deep Learning", "Computer Vision"],
+      github: "",
+      demo: "https://huggingface.co/spaces/zooray/pneumonia-diagnostic"
+    },
+    {
+      id: 4,
       title: "Stack Overflow 2024 Survey Analysis",
       description: "Built a scalable ETL pipeline (Airflow, PySpark, MinIO, Docker) to analyze Stack Overflow data; stored results in a Neno-hosted data warehouse and visualized insights via a Streamlit dashboard.",
       tech: ["Python", "Pandas", "PySpark", "Plotly", "Streamlit", "PostgreSQL", "Airflow"],
@@ -29,15 +38,6 @@ export default function ProjectList() {
       github: "https://github.com/ziruiwang1996/stackoverflow-survey-dashboard",
       demo: "https://stackoverflow-2024-survey-dashboard.streamlit.app"
     },
-    // {
-    //   id: 4,
-    //   title: "MIMIC healthcare data analysis",
-    //   description: "Project incoming",
-    //   tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "SQL"],
-    //   domains: ["Data Science"],
-    //   github: "",
-    //   demo: ""
-    // },
     {      
       id: 5,
       title: "Textbook Exchange Platform",
