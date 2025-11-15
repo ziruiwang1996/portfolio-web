@@ -16,7 +16,7 @@ export default function ProjectList() {
       title: "AI Game Center: FastAPI-Driven Backend, React.js Experience",
       description: "An interactive platform featuring a suite of AI-powered games, built with a Python backend and React front-end for seamless, engaging gameplay. Deployed on AWS EC2 and Netlify for robust, scalable performance.",
       tech: ["Python", "FastAPI", "React.js", "Nginx", "Docker", "AWS EC2"],
-      domains: ["Software Engineer", "Artificial Intelligence"],
+      domains: ["Software Engineer", "Artificial Intelligence", "Machine Learning"],
       github: "https://github.com/ziruiwang1996/ai_game_fastapi",
       demo: "https://ai-game-center.netlify.app"
     },
@@ -25,7 +25,7 @@ export default function ProjectList() {
       title: "Pneumonia Diagnostic Classifier",
       description: "A ResNet-18–based classifier that categorizes chest X-rays as bacterial, viral, or normal, and visualizes model predictions using saliency maps and class activation maps (CAMs).",
       tech: ["Python", "PyTorch", "Lightning", "Matplotlib", "Numpy"],
-      domains: ["Deep Learning", "Computer Vision"],
+      domains: ["Machine Learning", "Deep Learning", "Computer Vision"],
       github: "",
       demo: "https://huggingface.co/spaces/zooray/pneumonia-diagnostic"
     },
@@ -34,7 +34,7 @@ export default function ProjectList() {
       title: "Stack Overflow 2024 Survey Analysis",
       description: "Built a scalable ETL pipeline (Airflow, PySpark, MinIO, Docker) to analyze Stack Overflow data; stored results in a Neno-hosted data warehouse and visualized insights via a Streamlit dashboard.",
       tech: ["Python", "Pandas", "PySpark", "Plotly", "Streamlit", "PostgreSQL", "Airflow"],
-      domains: ["Data Science", "Data Engineering"],
+      domains: ["Data Science", "Machine Learning", "Data Engineering"],
       github: "https://github.com/ziruiwang1996/stackoverflow-survey-dashboard",
       demo: "https://stackoverflow-2024-survey-dashboard.streamlit.app"
     },
@@ -57,7 +57,8 @@ export default function ProjectList() {
       "Artificial Intelligence": "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200", 
       "AI Engineer": "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
       "Software Engineer": "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
-      "Data Engineering": "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200"
+      "Data Engineering": "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200",
+      "Machine Learning": "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200",
     }
     return styles[domain] || "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200"
   }
