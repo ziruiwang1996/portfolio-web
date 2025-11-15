@@ -26,7 +26,7 @@ export default function ProjectList() {
       description: "A ResNet-18–based classifier that categorizes chest X-rays as bacterial, viral, or normal, and visualizes model predictions using saliency maps and class activation maps (CAMs).",
       tech: ["Python", "PyTorch", "Lightning", "Matplotlib", "Numpy"],
       domains: ["Machine Learning", "Deep Learning", "Computer Vision"],
-      github: "",
+      github: "https://github.com/ziruiwang1996/pneumonia-classifer-training",
       demo: "https://huggingface.co/spaces/zooray/pneumonia-diagnostic"
     },
     {
