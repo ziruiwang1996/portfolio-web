@@ -129,9 +129,6 @@ export default function Home() {
       <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200">Technical Capabilities</h2>
-          <p className="mt-3 text-base lg:text-lg text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto leading-7">
-            A summary of the systems and methods I use to turn research ideas and real-world data into practical ML applications.
-          </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Work Category 1 */}
@@ -147,20 +144,20 @@ export default function Home() {
               Data Science & Engineering
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Building reliable data pipelines, features, and models that support real-world decision-making under messy data and practical constraints.
+              Designing data pipelines and analytical workflows that support reliable modeling and decision-making under messy, incomplete, and evolving real-world data.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Perform exploratory analysis and statistical modeling to surface patterns, risks, and decision-relevant signals
+                Conduct exploratory analysis and statistical modeling to surface patterns, uncertainty, and decision-relevant signals in real-world datasets
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Engineer features and evaluation workflows to improve model robustness and interpretability
+                Engineer features and evaluation workflows to improve model robustness, interpretability, and stability across data shifts
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Build and orchestrate ETL pipelines with Airflow / PySpark and warehouses to support reproducible experimentation
+                Build and orchestrate ETL pipelines (Airflow, PySpark, SQL-based warehouses) to support reproducible experimentation and downstream ML systems
               </li>
             </ul>
           </div>
@@ -178,20 +175,20 @@ export default function Home() {
               Machine Learning & AI
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Developing and evaluating ML systems across NLP, predictive modeling, and generative AI, with an emphasis on safety and interpretability.
+              Developing and evaluating machine learning systems across NLP, predictive modeling, and generative AI, with emphasis on interpretability, reliability, and responsible deployment.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Fine-tune and evaluate language models for biomedical and domain-specific text understanding and summarization
+                Fine-tune and evaluate language models for domain-specific text understanding and summarization, including biomedical and technical corpora
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Train and optimize deep learning models in PyTorch/TensorFlow with clear metrics and ablation-driven iteration
+                Train and optimize deep learning models in PyTorch/TensorFlow using clear metrics, controlled experiments, and ablation-driven iteration
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Prototype retrieval-augmented and tool-using agents that connect models to external data sources responsibly
+                Prototype retrieval-augmented and tool-using systems that connect models to external data sources with attention to correctness, provenance, and failure modes
               </li>
             </ul>
           </div>
@@ -208,20 +205,20 @@ export default function Home() {
               Software Development
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Shipping user-facing applications and backend services that make ML systems usable, testable, and maintainable.
+              Building user-facing applications and backend services that make systems usable, testable, and maintainable in real deployment settings.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Build full-stack apps with React/Next.js and Python/Java backends (Flask/Django/FastAPI/Spring Boot)
+                Build full-stack applications with React/Next.js and Python/Java backends (Flask, Django, FastAPI, Spring Boot)
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Design RESTful APIs and service boundaries that support iteration, logging, and validation
+                Design RESTful APIs and service boundaries that support iteration, observability, validation, and model lifecycle management
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Integrate SQL/NoSQL persistence layers and optimize data access patterns for application performance
+                Integrate SQL and NoSQL persistence layers and optimize data access patterns for application performance and scalability
               </li>
             </ul>
           </div>
@@ -241,20 +238,20 @@ export default function Home() {
               Research & Publications
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Research experience at the intersection of computational biology and health AI, with a focus on rigorous evaluation and clear communication.
+              Research at the intersection of machine learning, computational biology, and health AI, with emphasis on rigorous evaluation, reproducibility, and clear technical communication.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Bioinformatics and medical informatics research using real-world biomedical data
+                Bioinformatics and medical informatics research using real-world biomedical data and applied machine learning methods
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Peer-reviewed publications and research writing focused on reproducible methods
+                Peer-reviewed publications and research writing with emphasis on reproducible methods and transparent evaluation
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Open-source work and technical documentation to share tools and findings
+                Open-source contributions and technical documentation to share tools, methods, and experimental findings
               </li>
             </ul>
           </div>

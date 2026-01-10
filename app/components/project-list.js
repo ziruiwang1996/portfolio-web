@@ -5,10 +5,15 @@ export default function ProjectList() {
     {
       id: 1,
       title: "Medication Interpreter",
-      description: `Medication Interpreter reflects my long-standing interest in building patient-facing applications. It helps patients understand
-      prescriptions by translating them into plain language with everyday usage guidance and layman-friendly side effects. Behind the scenes, I orchestrate
-      multiple specialist agents—covering drug labels, adverse events, real-world evidence, and clinical trials—to tackle complex queries, and a
-      Retrieval-Augmented Generation chatbot brings their insights together for user conversations.`,
+      description: `Medication Interpreter reflects my long-standing interest in building patient-facing health 
+      applications. I designed and built this system to help patients better understand their prescriptions by 
+      translating formal drug information into plain language, with everyday usage guidance and layman-friendly 
+      explanation of potential side effects. Behind the scenes, the project explores how multiple specialized 
+      AI agents—covering drug labels, adverse event reports, real-world evidence, and clinical trials—can be 
+      orchestrated to tackle complex queries, and how a Retrieval-Augmented Generation chatbot can bring agent 
+      insights together for user conversations. Through this project, I wanted to better understand the challenges 
+      of building responsible, trustworthy AI systems for healthcare, particularly in contexts where clarity, 
+      safety, and user trust matter as much as model performance.`,
       tech: ["Python", "LangChain", "FastAPI", "React.js", "Google Gemini", "Hugging Face"],
       domains: ["AI Engineering", "Software Engineering"],
       github: "https://github.com/ziruiwang1996/ai-agent-mcp",
@@ -17,10 +22,12 @@ export default function ProjectList() {
     {
       id: 2,
       title: "AI Games",
-      description: `AI Games grew out of pairing my Syracuse University Intro to AI course with learning React.js. The result is an interactive platform
-      where I showcase A* search, Minimax, Markov Decision Processes, and Gradient Descent through playable challenges, and I practiced end-to-end
-      deployment by containerizing the stack with Docker and shipping it to AWS EC2.`,
-      tech: ["Python", "FastAPI", "React.js", "Nginx", "Docker", "AWS"],
+      description: `AI Games emerged from pairing my Intro to AI course @ Syracuse University with my desire to
+      learn modern front-end development. The result is an interactive platform to make core AI concepts such as 
+      A* search, Minimax, Markov Decision Processes, and Gradient Descent tangible through playable games and 
+      visual demonstrations. This project also gave me hands-on experience designing and deploying a full-stack 
+      application.`,
+      tech: ["Python", "FastAPI", "React.js", "Nginx", "Docker", "AWS EC2"],
       domains: ["Artificial Intelligence", "Machine Learning", "Software Engineering"],
       github: "https://github.com/ziruiwang1996/ai_game_fastapi",
       demo: "https://ai-game-center.netlify.app"
@@ -28,9 +35,14 @@ export default function ProjectList() {
     {
       id: 3,
       title: "Pneumonia Diagnostic Classifier",
-      description: `This ResNet-18 classifier categorizes chest X-rays as bacterial, viral, or normal and let me combine my interests in computer vision
-      and medical applications. I also experimented with interpretability techniques like saliency maps and class activation maps to better understand
-      and explain what the model focuses on.`,
+      description: `This project allowed me to combine my interest in computer vision with real-world medical 
+      applications by training a ResNet-18 model to classify chest X-rays as bacterial pneumonia, viral pneumonia, 
+      or normal. My primary goal was to understand the full workflow of developing a medical imaging model, 
+      from data preprocessing and training to evaluation and deployment. In addition to model performance, I 
+      experimented with interpretability techniques such as saliency maps and class activation maps to better 
+      understand what visual features the model relied on when making predictions. Working on this project helped 
+      me appreciate both the potential and the limitations of deep learning in clinical contexts, especially the 
+      importance of transparency and careful interpretation when models are applied to sensitive medical data.`,
       tech: ["Python", "PyTorch", "Lightning", "Matplotlib", "NumPy", "Gradio"],
       domains: ["Computer Vision", "Deep Learning", "Machine Learning"],
       github: "https://github.com/ziruiwang1996/pneumonia-classifer-training",
@@ -39,9 +51,14 @@ export default function ProjectList() {
     {
       id: 4,
       title: "Stack Overflow Survey Analysis",
-      description: `This dashboard digs into the 2024 Stack Overflow Developer Survey so I can highlight trends in developer demographics, technologies,
-      and tooling. I built a scalable ETL pipeline that lands the data in a Neno-hosted warehouse, and I explored XGBoost, Random Forest, and regression
-      models for salary prediction even though the noisy survey data limits accuracy.`,
+      description: `In this project, I analyzed data from the 2024 Stack Overflow Developer Survey to explore 
+      trends in AI adoption, technologies, developer career outcomes, and education pathways. I built a scalable 
+      ETL pipeline to process the raw survey data and load it into a cloud data warehouse, then created an 
+      interactive dashboard to surface insights through visual exploration. I also experimented with machine 
+      learning models—including XGBoost, Random Forests, and regression approaches—to study salary prediction, 
+      while critically examining how noise, self-reporting bias, and missing data limit predictive performance 
+      in real-world surveys. This project strengthened my interest in data engineering and applied machine learning, 
+      particularly in understanding how data quality and assumptions shape the reliability of analytical results.`,
       tech: ["Python", "Pandas", "PySpark", "Plotly", "Streamlit", "PostgreSQL", "Airflow"],
       domains: ["Data Science", "Data Engineering", "Machine Learning"],
       github: "https://github.com/ziruiwang1996/stackoverflow-survey-dashboard",
@@ -50,9 +67,13 @@ export default function ProjectList() {
     {
       id: 5,
       title: "Textbook Exchange Platform Server",
-      description: `This Java web app started as my Object Oriented Design course project at Syracuse University, where I wanted to apply microservices
-      architecture in practice. I relied on patterns like Singleton, Finite State Machine, Strategy, and Decorator to keep each service maintainable,
-      and the platform lets students list, search, and exchange textbooks smoothly.`,
+      description: `This Java-based web application began as an Object-Oriented Design course project @ Syracuse 
+      University, where I wanted to apply microservices architecture concepts in a practical setting. The platform 
+      allows students to list, search for, and exchange textbooks through a distributed backend system. I emphasized 
+      clean architecture and maintainability by applying design patterns such as Singleton, Finite State Machine, 
+      Strategy, and Decorator across services, and by using message-based communication with RabbitMQ. This project 
+      helped solidify my foundation in backend software engineering and reinforced my interest in building modular, 
+      well-structured systems that can evolve over time.`,
       tech: ["Java", "Spring Boot", "Maven", "MySQL", "RabbitMQ"],
       domains: ["Software Engineering"],
       github: "https://github.com/ziruiwang1996/textbook-exchange-platform",
