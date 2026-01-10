@@ -29,7 +29,7 @@ export function Navbar() {
                 key={path}
                 href={path}
                 className={`
-                  relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ease-in-out outline-none focus-visible:ring-2 focus-visible:ring-blue-500
+                  relative group px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ease-in-out outline-none focus-visible:ring-2 focus-visible:ring-blue-500
                   ${isActive
                     ? 'bg-neutral-900 text-white dark:bg-neutral-100 dark:text-black shadow-lg'
                     : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800'

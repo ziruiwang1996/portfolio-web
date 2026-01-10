@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,12 +22,12 @@ export default function Home() {
                 Hi, I&apos;m Zirui Wang
               </h1>
               <p className="text-xl lg:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto lg:mx-0">
-                Engineer blending AI, data science, and software to build intelligent, sacalable systems
+                Engineer blending AI, data science, and software to build intelligent, scalable systems
               </p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a 
+            <Link 
               href="/project"
               className="group inline-flex items-center justify-center px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-black font-medium rounded-xl hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
@@ -34,13 +35,13 @@ export default function Home() {
               <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/resume"
               className="inline-flex items-center justify-center px-6 py-3 border-2 border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 font-medium rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-all duration-200"
             >
               View Resume
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -89,7 +90,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-12 text-neutral-800 dark:text-neutral-200 text-center">Technical Capabilities</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Work Category 1 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 hover:-translate-y-1">
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 shadow-[0_18px_40px_-16px_rgba(147,51,234,0.38)] hover:shadow-[0_28px_60px_-18px_rgba(147,51,234,0.5)] transition-all duration-300 hover:-translate-y-1">
             <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-purple-500 via-violet-600 to-purple-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
               <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
@@ -120,7 +121,7 @@ export default function Home() {
           </div>
 
           {/* Work Category 2 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 shadow-[0_18px_40px_-16px_rgba(59,130,246,0.35)] hover:shadow-[0_28px_60px_-18px_rgba(59,130,246,0.48)] transition-all duration-300 hover:-translate-y-1">
             <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
               <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -151,7 +152,7 @@ export default function Home() {
           </div>
 
           {/* Work Category 3 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-300 hover:-translate-y-1">
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 shadow-[0_18px_40px_-16px_rgba(34,197,94,0.32)] hover:shadow-[0_28px_60px_-18px_rgba(34,197,94,0.45)] transition-all duration-300 hover:-translate-y-1">
             <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-green-500 via-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
               <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
@@ -182,7 +183,7 @@ export default function Home() {
 
 
           {/* Work Category 4 */}
-          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 hover:-translate-y-1">
+          <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 shadow-[0_18px_40px_-16px_rgba(249,115,22,0.32)] hover:shadow-[0_28px_60px_-18px_rgba(249,115,22,0.45)] transition-all duration-300 hover:-translate-y-1">
             <div className="absolute top-6 right-6 w-16 h-16 bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
               <svg className="w-8 h-8 text-white drop-shadow-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>

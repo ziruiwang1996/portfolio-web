@@ -22,14 +22,24 @@ export default function ResumeContent() {
 
   const experience = [
     {
+      title: "AI Research Fellow (Contract)",
+      company: "Handshake AI Solutions",
+      location: "remote, USA",
+      period: "Sep 2025 – Feb 2026",
+      achievements: [
+        "Evaluated paired ML algorithms on real-world tasks, providing structured reasoning across feasibility, implementation complexity, novelty, and impact",
+        "Designed domain-specific prompts and analyzed LLM outputs to identify reasoning failures and enhance algorithm accuracy."
+      ]
+    },
+    {
       title: "Data Scientist Intern",
       company: "Regeneron Pharmaceuticals",
       location: "remote, USA",
       period: "May – Aug 2024",
       achievements: [
-        "Collaborated with data engineering teams to automate the retrieval and processing of 40k+ publications from arXiv and PubMed using Airflow and Docker, resulting in a scalable ETL pipeline that stores model-ready data in AWS S3.",
-        "Fine-tuned a Hugging Face LLM with Low-Rank Adaptation in TensorFlow to summarize clinical studies, enhancing patient outcome extraction and reducing manual review time by 25%.",
-        "Conducted document- and entity-level sentiment analysis on 100+ studies using NLTK Named Entity Recognition and a RoBERTa model, generating actionable insights on patient experiences and treatment efficacy."
+        "Collaborated with data engineering teams and automated retrieval/processing of 40k+ publications using Airflow and Docker, resulting in a scalable ETL pipeline that stored model-ready data in AWS S3.",
+        "Fine-tuned a LLM from Hugging Face with Low-Rank Adaptation for clinical study summarization, enhancing patient outcome extraction and reducing manual review time by 25%.",
+        "Conducted document- and entity-level sentiment analysis using NLTK Named Entity Recognition and a RoBERTa model, generating insights into patient experience and treatment efficacy from 100+ studies."
       ]
     },
     {
@@ -38,11 +48,10 @@ export default function ResumeContent() {
       location: "Tarrytown, NY",
       period: "May – Dec 2023",
       achievements: [
-        "Developed a Flask application with a RESTful API, Bootstrap UI, and MongoDB/PostgreSQL persistence to parse, conform, monitor, and query legacy data, improving data usability and accessibility by over 80%.",
-        "Applied domain-driven design and implemented an event-driven architecture using RabbitMQ message broker, reducing technical debt by 30% and enhancing system scalability and resilience.",
+        "Developed a Flask application with REST API, Bootstrap UI, and MongoDB/PostgreSQL storage to parse, conform, monitor, and query legacy data from LIMS and ELNs, improving data usability and accessibility.",
+        "Applied domain-driven design and implemented an event-driven architecture using RabbitMQ, reducing technical debt by 30% and enhancing system scalability.",
         "Implemented unit and integration tests using pytest, increasing test coverage by 50% and reducing pre-release defects by 30%.",
-        "Collaborated with cross-functional teams using Bitbucket for version control alongside Docker, Kubernetes, and Jenkins for CI/CD processes, decreasing deployment time by 40% and improving delivery speed by 30%.",
-        "Leveraged Jira and Confluence to facilitate Agile Scrum ceremonies, driving continuous improvement through backlog refinement, sprint planning, and reviews, resulting in a 30% reduction in blockers and faster delivery cycles."
+        "Collaborated across teams using Bitbucket, Docker, Kubernetes, and Jenkins to streamline CI/CD workflows while facilitating agile ceremonies with Jira and Confluence, cutting deployment time by 40% and blocking issues by 30%."
       ]
     },
     {
@@ -51,9 +60,9 @@ export default function ResumeContent() {
       location: "East Lansing, MI", 
       period: "Mar 2020 – Jul 2022",
       achievements: [
-        "Developed a BART transformer model and a Variational Autoencoder in PyTorch to generate novel protein sequences, achieving a 24% improvement in stability and a 300% increase in sequence library size.",
-        "Built a predictive model in Scikit-learn by integrating Hierarchical Clustering with a Random Forest classifier to streamline molecule screening, increasing lead yield 4-fold.",
-        "Led the development of data pipelines using PySpark, NumPy, and Pandas to collect, clean, normalize, and encode biological data, reducing preprocessing time by 40% and improving data accuracy.",
+        "Developed Bidirectional Auto-Regressive Transformer and Variational Autoencoder models in PyTorch for protein sequence design, achieving 24% FoldX-predicted stability gains and a 300% increase in sequence library size.",
+        "Designed a clustering-based molecule screening pipeline with Random Forest classification in scikit-learn, increasing lead yield 4x.",
+        "Built data pipelines using PySpark, NumPy, and Pandas for cleaning, normalization, and feature encoding, reducing data preprocessing time by 40% and improving data quality.",
         "Communicated results to stakeholders through visualizations and reports, applying PCA and statistical tests to highlight findings."
       ]
     }
@@ -98,7 +107,7 @@ export default function ResumeContent() {
         <h2 className="text-xl font-semibold mb-4 text-neutral-800 dark:text-neutral-200">Technical Skills</h2>
         <div className="space-y-3">
           {Object.entries(technicalSkills).map(([category, skills]) => (
-            <div key={category}>
+            <div key={category} className="border-l-2 border-purple-500 pl-4">
               <h3 className="font-medium text-neutral-800 dark:text-neutral-200 mb-1">{category}:</h3>
               <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">{skills}</p>
             </div>
@@ -120,10 +129,10 @@ export default function ResumeContent() {
                 </div>
                 <span className="text-sm text-neutral-500 mt-1 md:mt-0">{job.period}</span>
               </div>
-              <ul className="space-y-2">
+              <ul className="space-y-2 list-disc pl-5 text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
                 {job.achievements.map((achievement, achIndex) => (
-                  <li key={achIndex} className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                    • {achievement}
+                  <li key={achIndex}>
+                    {achievement}
                   </li>
                 ))}
               </ul>
@@ -151,17 +160,6 @@ export default function ResumeContent() {
             </li>
           ))}
         </ul>
-      </section>
-      
-      {/* Download Resume Button */}
-      <section className="pt-6 border-t border-neutral-200 dark:border-neutral-800">
-        <a 
-          href="/documents/Zirui_Wang_Resume.pdf"
-          download="Zirui_Wang_Resume.pdf"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 no-underline"
-        >
-          Download PDF Resume
-        </a>
       </section>
     </div>
   )

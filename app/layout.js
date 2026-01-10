@@ -22,7 +22,7 @@ export const metadata = {
   title: "Zirui Wang - Portfolio",
   description: "Professional portfolio of Zirui Wang, showcasing projects, skills, and resume",
   keywords: ["portfolio", "web developer", "software engineer", "Zirui Wang"],
-  metadataBase: new URL('https://your-production-domain.com'), // TODO: replace with real domain
+  metadataBase: new URL('https://ziruiwang.vercel.app'),
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' },
@@ -34,11 +34,11 @@ export const metadata = {
   openGraph: {
     title: "Zirui Wang - Portfolio",
     description: "Professional portfolio of Zirui Wang, showcasing projects, skills, and resume",
-    url: "https://your-portfolio-url.vercel.app",
+    url: "https://ziruiwang.vercel.app",
     siteName: "Zirui Wang Portfolio",
     images: [
       {
-        url: "/og-image.jpg", // Add an image to your public folder for this
+        url: "/images/profile.jpeg",
         width: 1200,
         height: 630,
         alt: "Zirui Wang Portfolio",
