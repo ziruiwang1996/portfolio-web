@@ -8,9 +8,9 @@ export default function ProjectList() {
       description: `Medication Interpreter reflects my long-standing interest in building patient-facing health 
       applications. I designed and built this system to help patients better understand their prescriptions by 
       translating formal drug information into plain language, with everyday usage guidance and layman-friendly 
-      explanation of potential side effects. Behind the scenes, the project explores how multiple specialized 
+      explanations of potential side effects. Behind the scenes, the project explores how multiple specialized 
       AI agents—covering drug labels, adverse event reports, real-world evidence, and clinical trials—can be 
-      orchestrated to tackle complex queries, and how a Retrieval-Augmented Generation chatbot can bring agent 
+      orchestrated to tackle complex queries, and how a Retrieval-Augmented Generation chatbot can bring agents' 
       insights together for user conversations. Through this project, I wanted to better understand the challenges 
       of building responsible, trustworthy AI systems for healthcare, particularly in contexts where clarity, 
       safety, and user trust matter as much as model performance.`,

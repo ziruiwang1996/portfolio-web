@@ -55,7 +55,7 @@ export default function Home() {
           <div className="lg:col-span-8 space-y-6 max-w-prose">
             <p className="text-base lg:text-lg text-neutral-600 dark:text-neutral-400 leading-7 lg:leading-8">
               I am a data scientist and AI engineer focused on building intelligent systems that turn complex data into meaningful, real-world impact.
-              My background in chemical engineering and research-driven problem solving shaped how I think about data, systems, and decision-making, especially
+              My background in chemical engineering and research-driven problem-solving shaped how I think about data, systems, and decision-making, especially
               in scientific and healthcare contexts.
             </p>
 
@@ -96,7 +96,7 @@ export default function Home() {
               <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
 
               <div className="py-2">
-                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Strengths</dt>
+                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Strength</dt>
                 <dd className="mt-1 text-neutral-800 dark:text-neutral-200 leading-6">
                   <div>Agentic AI systems</div>
                   <div>Data pipelines</div>
@@ -109,7 +109,7 @@ export default function Home() {
                 <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Domain</dt>
                 <dd className="mt-1 text-neutral-800 dark:text-neutral-200 leading-6">
                   <div>Digital Health</div>
-                  <div>+ generalizable ML systems</div>
+                  <div>+ Generalizable ML systems</div>
                 </dd>
               </div>
               <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
