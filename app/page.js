@@ -22,7 +22,7 @@ export default function Home() {
                 Hi, I&apos;m Zirui Wang
               </h1>
               <p className="text-xl lg:text-2xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto lg:mx-0">
-                Engineer blending AI, data science, and software to build intelligent, scalable systems
+                AI/ML Engineer building data-driven systems for complex, real-world decision-making
               </p>
             </div>
           </div>
@@ -47,47 +47,92 @@ export default function Home() {
       </section>
 
       {/* About Me Section */}
-      <section className="bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-8 lg:p-12">
+      <section className="relative overflow-hidden bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 rounded-2xl p-8 lg:p-12">
         <h2 className="text-3xl font-bold mb-8 text-neutral-800 dark:text-neutral-200">About Me</h2>
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 space-y-6">
-            <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              I&apos;m a data scientist and AI engineer passionate about building intelligent systems that transform complex data into meaningful, 
-              real-world impact. My journey started in chemical and biomedical research, where I saw firsthand how data and computation drives 
-              healthcare innovation. Since then, I&apos;ve focused on combining AI, software engineering, and scalable data systems 
-              to turn complex datasets into actionable solutions, whether it&apos;s fine-tuning large language models, developing 
-              data pipelines, or designing intelligent applications that make knowledge more accessible.
+
+        <div className="grid gap-8 lg:gap-10 lg:grid-cols-12 items-center">
+          {/* Left: About text */}
+          <div className="lg:col-span-8 space-y-6 max-w-prose">
+            <p className="text-base lg:text-lg text-neutral-600 dark:text-neutral-400 leading-7 lg:leading-8">
+              I am a data scientist and AI engineer focused on building intelligent systems that turn complex data into meaningful, real-world impact.
+              My background in chemical engineering and research-driven problem solving shaped how I think about data, systems, and decision-making, especially
+              in scientific and healthcare contexts.
             </p>
+
+            <p className="text-base lg:text-lg text-neutral-600 dark:text-neutral-400 leading-7 lg:leading-8">
+              Since then, I have worked at the intersection of machine learning, software engineering, and applied data analysis, building and prototyping
+              solutions that turn complex datasets into actionable insights. My experience includes fine-tuning large language models, developing data
+              pipelines, and designing intelligent applications, with an emphasis on interpretability, robustness, and alignment with real user needs.
+            </p>
+
+            {/* Mobile separator */}
+            <div className="block lg:hidden pt-2">
+              <div className="h-px w-full bg-neutral-200/70 dark:bg-neutral-700/60" />
+            </div>
           </div>
 
-
-          <div className="space-y-4">
-            <h3 className="font-semibold text-neutral-800 dark:text-neutral-200">At a Glance</h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-neutral-500 dark:text-neutral-400">Location</span>
-                  <span className="text-neutral-800 dark:text-neutral-200">Syracuse, NY</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-500 dark:text-neutral-400">Education</span>
-                  <span className="text-neutral-800 dark:text-neutral-200">MS Computer Science</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-500 dark:text-neutral-400">Focus</span>
-                  <span className="text-neutral-800 dark:text-neutral-200">Data Science, ML/AI Engineer</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-500 dark:text-neutral-400">Status</span>
-                  <span className="text-green-600 dark:text-green-400">Open to opportunities</span>
-                </div>
-              </div>
+          {/* Right: At a Glance panel */}
+          <div className="lg:col-span-4 lg:justify-self-end self-center lg:-mt-6 w-full px-2 lg:px-0 lg:max-w-sm">
+            <div className="mb-3">
+              <h3 className="text-base font-semibold text-neutral-800 dark:text-neutral-200">At a Glance</h3>
             </div>
+            <dl className="text-sm leading-5">
+              <div className="py-2">
+                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Education</dt>
+                <dd className="mt-1 text-neutral-800 dark:text-neutral-200 leading-6">
+                  <div>MS Computer Science</div>
+                  <div>BS Chemical Engineering</div>
+                </dd>
+              </div>
+              <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
+
+              <div className="py-2">
+                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Focus</dt>
+                <dd className="mt-1 text-neutral-800 dark:text-neutral-200 leading-6">
+                  <div>Data Science</div>
+                  <div>ML/AI Engineering</div>
+                  </dd>
+              </div>
+              <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
+
+              <div className="py-2">
+                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Strengths</dt>
+                <dd className="mt-1 text-neutral-800 dark:text-neutral-200 leading-6">
+                  <div>Agentic AI systems</div>
+                  <div>Data pipelines</div>
+                  <div>Applied ML</div>
+                  </dd>
+              </div>
+              <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
+
+              <div className="py-2">
+                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Domain</dt>
+                <dd className="mt-1 text-neutral-800 dark:text-neutral-200 leading-6">
+                  <div>Digital Health</div>
+                  <div>+ generalizable ML systems</div>
+                </dd>
+              </div>
+              <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
+
+              <div className="py-2 flex items-center justify-between">
+                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Status</dt>
+                <dd>
+                  <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-300 border border-green-200/60 dark:border-green-800/40">Open to opportunities</span>
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
 
       {/* My Work Section */}
       <section>
-        <h2 className="text-3xl font-bold mb-12 text-neutral-800 dark:text-neutral-200 text-center">Technical Capabilities</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-neutral-800 dark:text-neutral-200">Technical Capabilities</h2>
+          <p className="mt-3 text-base lg:text-lg text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto leading-7">
+            A summary of the systems and methods I use to turn research ideas and real-world data into practical ML applications.
+          </p>
+        </div>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Work Category 1 */}
           <div className="group relative bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 pr-24 shadow-[0_18px_40px_-16px_rgba(147,51,234,0.38)] hover:shadow-[0_28px_60px_-18px_rgba(147,51,234,0.5)] transition-all duration-300 hover:-translate-y-1">
@@ -102,20 +147,20 @@ export default function Home() {
               Data Science & Engineering
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Turning complex data into meaningful insights and predictive models that drive decision-making
+              Building reliable data pipelines, features, and models that support real-world decision-making under messy data and practical constraints.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Perform exploratory data analysis, statistical modeling, and feature engineering to uncover trends and improve model performance
+                Perform exploratory analysis and statistical modeling to surface patterns, risks, and decision-relevant signals
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Develop and evaluate predictive models using Scikit-learn, XGBoost, and TensorFlow
+                Engineer features and evaluation workflows to improve model robustness and interpretability
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Extract Transform Load (ETL) data pipeline automation with Airflow, PySpark, data warehouse, and AWS to ensure scalability and reproducibility
+                Build and orchestrate ETL pipelines with Airflow / PySpark and warehouses to support reproducible experimentation
               </li>
             </ul>
           </div>
@@ -133,20 +178,20 @@ export default function Home() {
               Machine Learning & AI
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Developing and deploying intelligent systems across NLP, predictive modeling, and generative AI
+              Developing and evaluating ML systems across NLP, predictive modeling, and generative AI, with an emphasis on safety and interpretability.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Fine-tune and evaluate large language models for biomedical, scientific, and domain-specific research
+                Fine-tune and evaluate language models for biomedical and domain-specific text understanding and summarization
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Develop and optimize deep neural networks with PyTorch and TensorFlow
+                Train and optimize deep learning models in PyTorch/TensorFlow with clear metrics and ablation-driven iteration
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Create AI agents that reason, retrieve, and interact with external data sources
+                Prototype retrieval-augmented and tool-using agents that connect models to external data sources responsibly
               </li>
             </ul>
           </div>
@@ -163,20 +208,20 @@ export default function Home() {
               Software Development
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Building scalable web applications and microservices with modern frameworks
+              Shipping user-facing applications and backend services that make ML systems usable, testable, and maintainable.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                React.js/Next.js/Node.js/Flask/Django/Spring Boot applications
+                Build full-stack apps with React/Next.js and Python/Java backends (Flask/Django/FastAPI/Spring Boot)
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                RESTful API design and backend integration
+                Design RESTful APIs and service boundaries that support iteration, logging, and validation
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Database architecture, optimization, and persistence management with SQL and NoSQL databases
+                Integrate SQL/NoSQL persistence layers and optimize data access patterns for application performance
               </li>
             </ul>
           </div>
@@ -196,20 +241,20 @@ export default function Home() {
               Research & Publications
             </h3>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              Advancing scientific discovery through computational research and open collaboration
+              Research experience at the intersection of computational biology and health AI, with a focus on rigorous evaluation and clear communication.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Bioinformatics, computational biology, medical informatics research
+                Bioinformatics and medical informatics research using real-world biomedical data
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Paper publication
+                Peer-reviewed publications and research writing focused on reproducible methods
               </li>
               <li className="flex items-start text-sm text-neutral-600 dark:text-neutral-400">
                 <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                Open-source contributions
+                Open-source work and technical documentation to share tools and findings
               </li>
             </ul>
           </div>
