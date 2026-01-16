@@ -14,7 +14,7 @@ export default function ProjectList() {
       insights together for user conversations. Through this project, I wanted to better understand the challenges 
       of building responsible, trustworthy AI systems for healthcare, particularly in contexts where clarity, 
       safety, and user trust matter as much as model performance.`,
-      tech: ["Python", "LangChain", "FastAPI", "React.js", "Google Gemini", "Hugging Face"],
+      tech: ["Python", "LangChain", "LangGraph", "FastAPI", "React.js", "Google Gemini", "Hugging Face"],
       domains: ["AI Engineering", "Software Engineering"],
       github: "https://github.com/ziruiwang1996/ai-agent-mcp",
       demo: "https://medshelper.netlify.app"
