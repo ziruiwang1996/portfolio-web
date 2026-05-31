@@ -22,6 +22,14 @@ export default function ResumeContent() {
 
   const experience = [
     {
+      title: "Data Scientist",
+      company: "Bucknell University",
+      location: "Lewisburg, PA",
+      period: "Mar 2025 – Present",
+      achievements: [
+      ]
+    },
+    {
       title: "AI Research Fellow (Contract)",
       company: "Handshake AI Solutions",
       location: "remote, USA",

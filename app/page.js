@@ -105,21 +105,6 @@ export default function Home() {
               </div>
               <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
 
-              <div className="py-2">
-                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Domain</dt>
-                <dd className="mt-1 text-neutral-800 dark:text-neutral-200 leading-6">
-                  <div>Digital Health</div>
-                  <div>+ Generalizable ML systems</div>
-                </dd>
-              </div>
-              <div className="h-px w-full bg-neutral-200/50 dark:bg-neutral-700/40" />
-
-              <div className="py-2 flex items-center justify-between">
-                <dt className="text-xs font-medium tracking-wide text-neutral-500 dark:text-neutral-400 uppercase">Status</dt>
-                <dd>
-                  <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-green-50 text-green-700 dark:bg-green-950/40 dark:text-green-300 border border-green-200/60 dark:border-green-800/40">Open to opportunities</span>
-                </dd>
-              </div>
             </dl>
           </div>
         </div>
